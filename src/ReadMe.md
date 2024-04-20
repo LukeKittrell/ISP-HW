@@ -6,7 +6,7 @@ Steps
 1. Identify where your image file is located in your directory
 2. Make sure that the image file has access to the dcraw program (for Windows dcraw can be put in the \Windows file). If your image file doesn't have access to dcraw, then move it to a file that can access dcraw.
 3. Once you have your correct file location run the following line in a terminal "dcraw -4 -d -v -w -T <Your image file location>. In the output you should see the following "Scaling with darkness <black>, saturation <white>, and
-multipliers <r_scale> <g_scale> <b_scale> <g_scale>". Record the integer numbers for <black>, <white>, <r scale>, <g scale>, and <b scale>.
+multipliers <r_scale> <g_scale> <b_scale> <g_scale>". Record the integer numbers for black, white, r scale, g scale, and b scale.
 4. Place the corresponding recorded integers into their respective variable locations at the beginning of the notebook.
 5. Delete the .tiff file that was created from the terminal command above.
 6. Run the following line in your terminal to get a tiff file that will work with the notebook. "dcraw -4 -D -T <Your image file location>"
